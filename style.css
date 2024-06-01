@@ -1,0 +1,96 @@
+body{
+    margin: 0px;
+    background-image: url('dark-wavy-colors-background_23-2148403785.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.TopNav{
+    height:100px;
+    width: 100%;
+    background:linear-gradient(to right,rgb(83, 43, 83),rgb(3, 3, 96));
+}
+.SideBar{
+    display: grid;
+    grid-template-rows: 2fr 6fr 2fr;
+    position: fixed;
+    left: -45%;
+    width: 30%;
+    height: 90%;
+    background:rgb(83, 43, 83);
+    row-gap: 30px;
+    transition: all 0.8s ease;
+}
+.Items{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+   
+}
+.NavItem a{
+    color: whitesmoke;
+    font-size:130%;
+}
+.NavItem a i{
+    color: whitesmoke;
+   margin-right: 3%;
+}
+.NavItem{
+   
+   text-align: center;
+   box-sizing: border-box;
+   align-content: center;
+   border-top: 1px solid rgba(255,255,255,.1);
+   border-bottom: 1px solid black;
+}
+.NavItem:hover{
+    color: rgb(172, 166, 166);
+    background-color: rgb(74, 44, 74);
+    scale: 1.02;
+    transition-duration: 0.5s;
+}
+#check{
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label #btn{
+    left: 40px;
+    top: 4%;
+    font-size: 35px;
+    color: white;
+    transition: all 0.5s ease;
+}
+label #Logo{
+    left:-50%;
+    position: fixed;
+    color: white;
+}
+label #cancel{
+    z-index: 1111;
+    left:-50%;
+    top:16%;
+    transition: all 0.8s ease;
+}
+#check:checked ~ .SideBar{
+    left: 0%;
+}
+#check:checked ~ label #btn{
+    left: 40%;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+     left:28%;
+    
+}
+#chech:checked ~ label #Logo{
+    left: 0%;
+}
