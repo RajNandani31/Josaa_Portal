@@ -4,6 +4,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:100% 100%;
+    overflow-x: hidden;
 }
 *{
     margin: 0;
@@ -12,7 +13,7 @@ body{
     text-decoration: none;
 }
 .TopNav{
-    height:100px;
+    height:80px;
     width: 100%;
     background:linear-gradient(to right,rgb(83, 43, 83),rgb(3, 3, 96));
 }
@@ -20,10 +21,10 @@ body{
     display: grid;
     grid-template-rows: 2fr 6fr 2fr;
     position: fixed;
-    left: -45%;
+    right: -45%; 
     width: 30%;
     height: 90%;
-    background:rgb(83, 43, 83);
+    background:rgb(3, 3, 81);
     row-gap: 30px;
     transition: all 0.8s ease;
 }
@@ -35,6 +36,7 @@ body{
 .NavItem a{
     color: whitesmoke;
     font-size:130%;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .NavItem a i{
     color: whitesmoke;
@@ -62,35 +64,38 @@ label #btn, label #cancel{
     cursor: pointer;
 }
 label #btn{
-    left: 40px;
-    top: 4%;
+    right: 40px;
+    top: 3%;
     font-size: 35px;
     color: white;
     transition: all 0.5s ease;
+    overflow-x:hidden;
 }
 label #Logo{
-    left:-50%;
+    left:0%;
     position: fixed;
     color: white;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: xx-large;
+    transition: all 0.5s ease;
+    font-family: Arial, Helvetica, sans-serif;
 }
 label #cancel{
     z-index: 1111;
-    left:-50%;
+    right:-50%;
     top:16%;
     transition: all 0.8s ease;
 }
 #check:checked ~ .SideBar{
-    left: 0%;
+    right: 0%;
 }
 #check:checked ~ label #btn{
-    left: 40%;
+    right: 40%;
     opacity: 0;
     pointer-events: none;
 }
 #check:checked ~ label #cancel{
-     left:28%;
+     right:28%;
     
-}
-#chech:checked ~ label #Logo{
-    left: 0%;
 }
