@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-image: url('dark-wavy-colors-background_23-2148403785.jpg');
+    background-image: url('Back_img.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:100% 100%;
@@ -15,7 +15,7 @@ body{
 .TopNav{
     height:80px;
     width: 100%;
-    background:linear-gradient(to right,rgb(83, 43, 83),rgb(3, 3, 96));
+    background:transparent;
 }
 .SideBar{
     display: grid;
@@ -24,9 +24,10 @@ body{
     right: -45%; 
     width: 30%;
     height: 90%;
-    background:rgb(3, 3, 81);
+    background:transparent;
     row-gap: 30px;
     transition: all 0.8s ease;
+    
 }
 .Items{
     display: grid;
@@ -34,7 +35,7 @@ body{
    
 }
 .NavItem a{
-    color: whitesmoke;
+    color: black;
     font-size:130%;
     font-family:Arial, Helvetica, sans-serif;
 }
