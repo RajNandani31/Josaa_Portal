@@ -5,6 +5,9 @@ body{
     background-attachment: fixed;
     background-size:100% 100%;
     overflow-x: hidden;
+    display: grid;
+    grid-template-rows: 1.5fr 3fr 0.5fr 2fr;
+
 }
 *{
     margin: 0;
@@ -23,24 +26,28 @@ body{
     position: fixed;
     right: -45%; 
     width: 30%;
-    height: 90%;
-    background:transparent;
+    height: 100%;
+    background:black;
+    opacity: 0.5;
     row-gap: 30px;
     transition: all 0.8s ease;
+    top: 0%;
     
 }
 .Items{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
    
 }
 .NavItem a{
-    color: black;
+    color: white;
     font-size:130%;
     font-family:Arial, Helvetica, sans-serif;
+    opacity:2;
 }
 .NavItem a i{
-    color: whitesmoke;
+    color: white;
    margin-right: 3%;
 }
 .NavItem{
@@ -52,10 +59,11 @@ body{
    border-bottom: 1px solid black;
 }
 .NavItem:hover{
-    color: rgb(172, 166, 166);
-    background-color: rgb(74, 44, 74);
+    color: white;
+    background-color: black;
     scale: 1.02;
     transition-duration: 0.5s;
+    opacity:1;
 }
 #check{
     display: none;
@@ -98,5 +106,33 @@ label #cancel{
 }
 #check:checked ~ label #cancel{
      right:28%;
+    
+}
+.Title{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-left: 2%;;
+    font-size: 800%;
+    color: white;
+    text-shadow:4px 4px 4px #000000;
+  
+}
+.Subtitle{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 2%;
+    color: white;
+    font-size: 200%;
+    text-shadow:3px 3px 4px #000000;
+}
+.GetStarted{
+    height: 40%;
+    width:15%;
+    color: white;
+    background-color: black;
+    font-size: 150%;
+    border-radius: 110px;
+    margin-top: 2%;
+    margin-left: 2%;
     
 }
