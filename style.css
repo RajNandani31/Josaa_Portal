@@ -15,11 +15,6 @@ body{
     list-style: none;
     text-decoration: none;
 }
-.TopNav{
-    height:80px;
-    width: 100%;
-    background:transparent;
-}
 .SideBar{
     display: grid;
     grid-template-rows: 2fr 6fr 2fr;
@@ -80,7 +75,7 @@ label #btn{
     transition: all 0.5s ease;
     overflow-x:hidden;
 }
-label #Logo{
+#Logo{
     left:0%;
     position: fixed;
     color: white;
