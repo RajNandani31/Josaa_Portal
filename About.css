@@ -1,20 +1,19 @@
 body{
-    margin: 0px;
-    background-image: url('Back_img.png');
+    margin:0px;
+    
+   
+    overflow-x: hidden;
+    height: 100vh;
+    display: grid;
+    grid-template-rows:1.5fr 10fr;
+}
+.Navbar{
+    background-image: url(Nav_back.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:100% 100%;
-    overflow-x: hidden;
-    display: grid;
-    grid-template-rows:1fr 10fr;
-    align-items: center;
-    height: 100vh;
-}
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+    box-shadow:0px 4px 8px 0px rgba(0,0,0 ,0.8);
+
 }
 .SideBar{
     display: grid;
@@ -110,30 +109,4 @@ label #cancel{
 }
 @keyframes slideLeft{
     from{transform:translateX(4000%)}
-}
-.Content{
-    margin-right: 30%;
-    color: white;
-    margin-left: 2%;
-}
-.Title{
-    font-size: 500%;
-    text-shadow:4px 4px 4px #000000;
-    padding-bottom: 20px;
-  
-}
-.Subtitle{
-    font-size: 200%;
-    text-shadow:3px 3px 4px #000000;
-    padding-bottom: 20px;
-   
-}
-.GetStarted{
-    color: white;
-    background-color: black;
-    font-size: 150%;
-    border-radius:110px;
-    border-color: black;
-    padding:15px 30px;
-    
 }
